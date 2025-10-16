@@ -43,13 +43,13 @@ jobs:
         uses: fortify/github-action@v2
         with:
           sast-scan: true
-          debricked-sca-scan: false
+          debricked-sca-scan: true
         env:
           SSC_URL: ${{vars.SSC_URL}}
           SSC_TOKEN: ${{secrets.SSC_TOKEN}}
           SC_SAST_TOKEN: ${{secrets.SC_SAST_CLIENT_AUTH_TOKEN}}
           # SSC_LOGIN_EXTRA_OPTS: --socket-timeout=60s
-          # DEBRICKED_TOKEN: ${{secrets.DEBRICKED_TOKEN}}
+          DEBRICKED_TOKEN: ${{secrets.DEBRICKED_TOKEN}}
           SSC_APPVERSION: EA_IWA-Java:GH
           # DO_SETUP: true
           # SETUP_ACTION: https://scm.my.org/shared-repos/fcli-actions/setup.yaml
