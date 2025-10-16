@@ -60,7 +60,7 @@ jobs:
           # SC_SAST_SENSOR_VERSION: 24.4.1
           # EXTRA_SC_SAST_SCAN_OPTS: 
           # DO_WAIT: true
-          # DO_POLICY_CHECK: true
+          DO_POLICY_CHECK: true
           # POLICY_CHECK_ACTION: https://scm.my.org/shared-repos/fcli-actions/check-policy.yaml
           # POLICY_CHECK_EXTRA_OPTS: --on-unsigned=ignore
           # DO_JOB_SUMMARY: true
